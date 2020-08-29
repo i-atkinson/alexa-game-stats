@@ -1,0 +1,12 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<p id="data"></p>
+
+	<script>
+		setInterval(function(){
+			$.get('/data',function(data){
+				document.getElementById("data").innerHTML=data.gold;
+			});
+		},333000);
+	</script>
