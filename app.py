@@ -10,7 +10,7 @@ def main():
     return render_template('index.html')
 
 @app.route('/data')
-def timer():
+def data():
     return requests.get(data_url).json()
 
 app.run()
